@@ -4,7 +4,7 @@
 
 ## Демо
 
-Netlify: https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/
+Netlify: https://gorgeous-zuccutto-778bcd.netlify.app/
 
 ## Дизайн
 
@@ -39,15 +39,15 @@ npm install
 
 ## Страницы
 
-- [Главная (навигация)](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/)
-- [Авторизация](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/login/)
-- [Регистрация](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/register/)
-- [Чаты](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/chats/)
-- [Настройки профиля](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/settings/)
-- [Редактирование профиля](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/settings-edit/)
-- [Изменение пароля](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/settings-password/)
-- [404](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/404/)
-- [500](https://69261bae138d2e0008f747ef--profound-mochi-9badca.netlify.app/pages/500/)
+- [Главная (навигация)](https://gorgeous-zuccutto-778bcd.netlify.app/)
+- [Авторизация](https://gorgeous-zuccutto-778bcd.netlify.app/pages/login/)
+- [Регистрация](https://gorgeous-zuccutto-778bcd.netlify.app/pages/register/)
+- [Чаты](https://gorgeous-zuccutto-778bcd.netlify.app/pages/chats/)
+- [Настройки профиля](https://gorgeous-zuccutto-778bcd.netlify.app/pages/settings/)
+- [Редактирование профиля](https://gorgeous-zuccutto-778bcd.netlify.app/pages/settings-edit/)
+- [Изменение пароля](https://gorgeous-zuccutto-778bcd.netlify.app/pages/settings-password/)
+- [404](https://gorgeous-zuccutto-778bcd.netlify.app/pages/404/)
+- [500](https://gorgeous-zuccutto-778bcd.netlify.app/pages/500/)
 
 ## Структура проекта
 
