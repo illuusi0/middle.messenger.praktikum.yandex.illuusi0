@@ -4,7 +4,9 @@ import { RegisterPage } from './RegisterPage';
 const app = document.querySelector('#app');
 if (app) {
   const page = new RegisterPage();
-  app.innerHTML = '';
+  while (app.firstChild) {
+    app.removeChild(app.firstChild);
+  }
   const content = page.getContent();
   if (content) {
     app.appendChild(content);

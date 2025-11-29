@@ -11,7 +11,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "vite build && vite preview --port 3000",
-    "lint": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint \"src/**/*.{ts,tsx}\"",
+    "lint": "npm run lint:ts && npm run lint:eslint && npm run lint:stylelint",
+    "lint:ts": "tsc --noEmit",
+    "lint:eslint": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint \"src/**/*.{ts,tsx}\"",
+    "lint:stylelint": "stylelint \"src/**/*.css\"",
     "lint:fix": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint \"src/**/*.{ts,tsx}\" --fix",
     "stylelint": "stylelint \"src/**/*.css\"",
     "stylelint:fix": "stylelint \"src/**/*.css\" --fix"

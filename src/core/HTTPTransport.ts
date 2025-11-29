@@ -1,4 +1,11 @@
-type HTTPMethod = 'GET' | 'POST' | 'PUT' | 'DELETE';
+export enum HTTPMethod {
+  GET = 'GET',
+  POST = 'POST',
+  PUT = 'PUT',
+  DELETE = 'DELETE',
+}
+
+const DEFAULT_TIMEOUT = 5000;
 
 type RequestOptions = {
   method: HTTPMethod;
@@ -20,23 +27,23 @@ export class HTTPTransport {
     const fullUrl = queryParams
       ? `${url}?${this.buildQueryString(queryParams)}`
       : url;
-    return this.request(fullUrl, { method: 'GET' });
+    return this.request(fullUrl, { method: HTTPMethod.GET });
   }
 
   post(url: string, data?: unknown): Promise<XMLHttpRequest> {
-    return this.request(url, { method: 'POST', data });
+    return this.request(url, { method: HTTPMethod.POST, data });
   }
 
   put(url: string, data?: unknown): Promise<XMLHttpRequest> {
-    return this.request(url, { method: 'PUT', data });
+    return this.request(url, { method: HTTPMethod.PUT, data });
   }
 
   delete(url: string, data?: unknown): Promise<XMLHttpRequest> {
-    return this.request(url, { method: 'DELETE', data });
+    return this.request(url, { method: HTTPMethod.DELETE, data });
   }
 
   private request(url: string, options: RequestOptions): Promise<XMLHttpRequest> {
-    const { method, data, headers = {}, timeout = 5000 } = options;
+    const { method, data, headers = {}, timeout = DEFAULT_TIMEOUT } = options;
 
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();

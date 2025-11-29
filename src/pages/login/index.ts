@@ -4,7 +4,9 @@ import { LoginPage } from './LoginPage';
 const app = document.querySelector('#app');
 if (app) {
   const page = new LoginPage();
-  app.innerHTML = '';
+  while (app.firstChild) {
+    app.removeChild(app.firstChild);
+  }
   const content = page.getContent();
   if (content) {
     app.appendChild(content);

@@ -4,7 +4,9 @@ import { ChatsPage } from './ChatsPage';
 const app = document.querySelector('#app');
 if (app) {
   const page = new ChatsPage();
-  app.innerHTML = '';
+  while (app.firstChild) {
+    app.removeChild(app.firstChild);
+  }
   const content = page.getContent();
   if (content) {
     app.appendChild(content);

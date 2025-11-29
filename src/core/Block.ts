@@ -109,7 +109,9 @@ export class Block {
     Object.entries(this.children).forEach(([id, child]) => {
       const container = this._element?.querySelector(`[data-component="${id}"]`);
       if (container && child.getContent()) {
-        container.innerHTML = '';
+        while (container.firstChild) {
+          container.removeChild(container.firstChild);
+        }
         container.appendChild(child.getContent()!);
         child.dispatchComponentDidMount();
       }
